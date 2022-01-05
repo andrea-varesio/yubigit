@@ -26,7 +26,7 @@ if [ -f "variables.sh" ];
 	else
 		echo " variables.sh not found - creating a new file... "
 		touch variables.sh
-			cat << EOF >> ./variables.sh
+		cat << EOF >> ./variables.sh
 #!/bin/bash
 
 #https://github.com/andrea-varesio/yubigit
