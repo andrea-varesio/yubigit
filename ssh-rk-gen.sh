@@ -3,6 +3,7 @@
 #https://github.com/andrea-varesio/yubigit
 #automate the creation or import of resident SSH keys
 
+cd "$(dirname "$(realpath "$0")")"
 source variable-builder.sh
 
 read -p " Would you like to (i) import a resident key or (g) generate a new key pair? i/g " SSHKEY
