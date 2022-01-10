@@ -3,10 +3,13 @@
 #https://github.com/andrea-varesio/yubigit
 #yubigit initial setup script -- it's used to add the required variables to "variables.sh"
 
-echo "yubigit  Copyright (C) 2022 Andrea Varesio"
-echo "This program comes with ABSOLUTELY NO WARRANTY"
-echo "This is free software, and you are welcome to redistribute it under certain conditions"
-echo "Full license available at https://github.com/andrea-varesio/yubigit/blob/main/LICENSE"
+printf "**************************************************\n"
+printf "yubigit - Set of tools used to automate the use of git with YubiKeys .\n\n"
+printf "Copyright (C) 2022 Andrea Varesio (https://www.andreavaresio.com/).\n\n"
+printf "This program comes with ABSOLUTELY NO WARRANTY\n\n"
+printf "This is free software, and you are welcome to redistribute it under certain conditions\n\n"
+printf "Full license available at https://github.com/andrea-varesio/yubigit/\n"
+printf "**************************************************\n\n\n"
 
 #Checking for dependencies
 export DEPS=$(<dependencies)

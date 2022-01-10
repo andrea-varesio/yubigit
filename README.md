@@ -1,7 +1,7 @@
 # yubigit
 
 ## What is it
-It's a simple set of scripts that simplifies and automates the use of YubiKeys with `git`.
+It's a simple set of tools that simplifies and automates the use of `git` with YubiKeys.
 
 ## How to use it
 ### Initial Setup
@@ -27,5 +27,32 @@ It's all very simple.
 
 For ease of use you can create a symbolic link in your `$HOME` with `ln -s /path/to/add-repo.sh ~/`.
 
+## Contributions
+Contributions are welcome, feel free to submit issues and/or pull requests.
 
-Contributions are welcome, feel free to contact me for any question or suggestion.
+### To-Do
+
+
+### Known issues
+
+
+## LICENSE
+
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+"yubigit" - Set of tools used to automate the use of git with YubiKeys.
+Copyright (C) 2022 Andrea Varesio <https://www.andreavaresio.com/>.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
