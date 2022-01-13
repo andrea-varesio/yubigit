@@ -28,26 +28,26 @@ if [[ ! -z "$2" ]]; then
 	fi
 fi
 
-echo " Hello $GITUSER "
+echo " Hello ${GITUSER} "
 echo " The default path for this repo is : "
-echo " $REPOPATH "
-if [ $NOPROMPT == "false" ]; then
+echo " ${REPOPATH} "
+if [ ${NOPROMPT} == "false" ]; then
 	read -p " Do you want to change path? y/n : " NEWPATH
-	if [ $NEWPATH == "y" ]; then
+	if [ ${NEWPATH} == "y" ]; then
 		read -p " Enter the desired path : " REPOPATH
 	fi
 fi
-if [ -z "$REPO" ]; then
+if [ -z "${REPO}" ]; then
 	read -p " Insert repository name : " REPO
 fi
-mkdir -pv $REPOPATH/$REPO
-cd $REPOPATH/$REPO
+mkdir -pv ${REPOPATH}/${REPO}
+cd ${REPOPATH}/${REPO}
 git init
-echo " Repository $REPO initialized"
-read -p " Move files to upload into $REPOPATH/$REPO, then press ENTER "
+echo " Repository ${REPO} initialized"
+read -p " Move files to upload into ${REPOPATH}/${REPO}, then press ENTER "
 git add *
 echo " Added files"
-if [ "$PGPKEYID" == "nosign" ];
+if [ "${PGPKEYID}" == "nosign" ];
   then
     git commit -m "first commit"
     echo " Files committed "
@@ -58,9 +58,9 @@ if [ "$PGPKEYID" == "nosign" ];
 fi
 git branch -M main
 echo " Created branch main "
-git remote add origin git@github.com:$GITUSER/${REPO}.git
-echo " Added origin git@github.com:$GITUSER/${REPO}.git "
-if [ $NOPROMPT == "false" ]; then
+git remote add origin git@github.com:${GITUSER}/${REPO}.git
+echo " Added origin git@github.com:${GITUSER}/${REPO}.git "
+if [ ${NOPROMPT} == "false" ]; then
 	read -p " Press ENTER to confirm push "
 fi
 git push -u origin main
@@ -68,7 +68,7 @@ echo " Pushed files "
 
 unset YBKCOUNTER SERIALNO YBK GITUSER EMAIL PGPKEYID REPOPATH NEWPATH REPO
 
-echo " Goodbye $GITUSER "
+echo " Goodbye ${GITUSER} "
 unset GITUSER
 echo " Finished "
 exit
