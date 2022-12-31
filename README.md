@@ -1,3 +1,6 @@
+# ⚠️ WARNING ⚠️
+This project is no longer being maintained. Use at your own risk.
+
 # yubigit
 
 ## What is it
